@@ -115,11 +115,7 @@ to use this file to perform commands on the system as the root user.
 5. World-readable and writable files and folders introduce similar issues as loose user home
 permissions but throughout the system. The main cause of world readable files is the default
 mask used for file creation of either 0022 or 0002. As a result of this configuration weakness,
-files that may contain sensitive information will be readable by anyone that has access to the 
-
-system. Files may also be modified by anyone on the system if they are world-writable. This
-can lead to an attacker modifying files or scripts to hide forensic evidence or to execute
-commands by modifying a script used by Administrators.
+files that may contain sensitive information will be readable by anyone that has access to the system. Files may also be modified by anyone on the system if they are world-writable. This can lead to an attacker modifying files or scripts to hide forensic evidence or to execute commands by modifying a script used by Administrators.
 
 6. There is currently an issue with the password policy of the company, as every password I was
 able to recover (using various methods) were basic and easy to crack in nature. These
